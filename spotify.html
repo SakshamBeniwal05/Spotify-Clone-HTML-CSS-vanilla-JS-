@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <svg id="spotify" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" aria-label="Spotify"
+                aria-hidden="false" height="32" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 dDJltW">
+                <path
+                    d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546m13.612-.036-.832-.247c-1.67-.495-2.14-.681-2.14-1.353 0-.637.708-1.327 2.264-1.327 1.539 0 2.839.752 3.51 1.31.116.096.24.052.24-.098V6.935c0-.097-.027-.15-.098-.203-.83-.62-2.272-1.07-3.723-1.07-2.953 0-4.722 1.68-4.722 3.59 0 2.157 1.371 2.91 3.626 3.546l.973.274c1.689.478 1.998.902 1.998 1.556 0 1.097-.831 1.433-2.07 1.433-1.556 0-3.457-.911-4.35-2.025-.08-.098-.177-.053-.177.062v2.423c0 .097.01.141.08.22.743.814 2.52 1.53 4.59 1.53 2.546 0 4.456-1.485 4.456-3.784 0-1.787-1.052-2.865-3.625-3.635m10.107-1.76c-1.68 0-2.653 1.026-3.219 2.052V9.376c0-.08-.044-.124-.124-.124h-2.22c-.079 0-.123.044-.123.124V20.72c0 .08.044.124.124.124h2.22c.079 0 .123-.044.123-.124v-4.536c.566 1.025 1.521 2.034 3.237 2.034 2.264 0 3.89-1.955 3.89-4.581s-1.644-4.545-3.908-4.545m-.654 6.986c-1.185 0-2.211-1.167-2.618-2.458.407-1.362 1.344-2.405 2.618-2.405 1.211 0 2.051.92 2.051 2.423s-.84 2.44-2.051 2.44m40.633-6.826h-2.264c-.08 0-.115.017-.15.097l-2.282 5.483-2.29-5.483c-.035-.08-.07-.097-.15-.097h-3.661v-.584c0-.955.645-1.397 1.476-1.397.496 0 1.035.256 1.415.486.089.053.15-.008.115-.088l-.796-1.901a.26.26 0 0 0-.124-.133c-.389-.203-1.025-.38-1.644-.38-1.875 0-2.954 1.432-2.954 3.254v.743h-1.503c-.08 0-.124.044-.124.124v1.768c0 .08.044.124.124.124h1.503v6.668c0 .08.044.123.124.123h2.264c.08 0 .124-.044.124-.123v-6.668h1.936l2.812 6.11-1.512 3.325c-.044.098.009.142.097.142h2.414c.08 0 .116-.018.15-.097l4.997-11.355c.035-.08-.009-.141-.097-.141M54.964 9.04c-2.865 0-4.837 2.025-4.837 4.616 0 2.573 1.971 4.616 4.837 4.616 2.856 0 4.846-2.043 4.846-4.616 0-2.591-1.99-4.616-4.846-4.616m.008 7.065c-1.37 0-2.343-1.043-2.343-2.45 0-1.405.973-2.449 2.343-2.449 1.362 0 2.335 1.043 2.335 2.45 0 1.406-.973 2.45-2.335 2.45m33.541-6.334a1.24 1.24 0 0 0-.483-.471 1.4 1.4 0 0 0-.693-.17q-.384 0-.693.17a1.24 1.24 0 0 0-.484.471q-.174.302-.174.681 0 .375.174.677.175.3.484.471t.693.17.693-.17.483-.471.175-.676q0-.38-.175-.682m-.211 1.247a1 1 0 0 1-.394.39 1.15 1.15 0 0 1-.571.14 1.16 1.16 0 0 1-.576-.14 1 1 0 0 1-.391-.39 1.14 1.14 0 0 1-.14-.566q0-.316.14-.562t.391-.388.576-.14q.32 0 .57.14.253.141.395.39t.142.565q0 .312-.142.56m-19.835-5.78c-.85 0-1.468.6-1.468 1.396s.619 1.397 1.468 1.397c.866 0 1.485-.6 1.485-1.397 0-.796-.619-1.397-1.485-1.397m19.329 5.19a.31.31 0 0 0 .134-.262q0-.168-.132-.266-.132-.099-.381-.099h-.588v1.229h.284v-.489h.154l.374.489h.35l-.41-.518a.5.5 0 0 0 .215-.084m-.424-.109h-.26v-.3h.27q.12 0 .184.036a.12.12 0 0 1 .065.116.12.12 0 0 1-.067.111.4.4 0 0 1-.192.037M69.607 9.252h-2.263c-.08 0-.124.044-.124.124v8.56c0 .08.044.123.124.123h2.263c.08 0 .124-.044.124-.123v-8.56c0-.08-.044-.124-.124-.124m-3.333 6.605a2.1 2.1 0 0 1-1.053.257c-.725 0-1.185-.425-1.185-1.362v-3.484h2.211c.08 0 .124-.044.124-.124V9.376c0-.08-.044-.124-.124-.124h-2.21V6.944c0-.097-.063-.15-.15-.08l-3.954 3.113c-.053.044-.07.088-.07.16v1.007c0 .08.044.124.123.124h1.539v3.855c0 2.087 1.203 3.06 2.918 3.06.743 0 1.46-.194 1.884-.442.062-.035.07-.07.07-.133v-1.68c0-.088-.044-.115-.123-.07"
+                    transform="translate(-0.95,0)" fill="#ffff" />
+            </svg>
+        </div>
+
+        <div id="search">
+            <div class="home">
+                <svg id="home" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                    aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                    <path
+                        d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z" />
+                </svg>
+            </div>
+            <div id="search_bar" class="nav_widget">
+                <span class="search_icon nav_widget">
+                    <svg id="search_icon" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+                        role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path
+                            d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z" />
+                    </svg>
+                </span>
+                <input type="search" id="search_input" placeholder="What do you want to play?">
+                <span class="charts nav_widget">
+                    <svg id="charts" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z" />
+                        <path
+                            d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <div id="profile">
+            <span id="buttons">
+                <button class="btn" id="Premium">Explore Premium</button>
+                <button class="btn" id="install">
+                    <svg id="download" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z" />
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z" />
+                    </svg>
+                    Install App
+                </button>
+            </span>
+            <span class="noti">
+                <svg id="noti" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                    aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                    <path
+                        d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z" />
+                </svg>
+            </span>
+            <span class="avatar">
+                <img id="avatar" src="assets/img/asset 1.jpeg" alt="">
+            </span>
+        </div>
+    </div>
+    <div id="main">
+        <div id="left">
+            <div id="left_header">
+                <div id="lib">
+                    <svg class="icons library" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path
+                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z" />
+                    </svg>
+                    <p id="lib_title" class="title icons">Your Library</p>
+                </div>
+                <div id="lib_widget">
+                    <svg class="icons lib_wid" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z" />
+                    </svg>
+
+
+                    <svg class="icons lib_wid" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk">
+                        <path
+                            d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="sorting">
+                <button class="common_btn cross_btn active_left_nav">Playlists</button>
+                <button class="common_btn cross_btn">Artists</button>
+                <button class="common_btn cross_btn">Albums</button>
+            </div>
+            <div id="list_sort">
+                <div class="inner_search">
+                    <svg id="inner_search" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+                        role="img" aria-hidden="true" data-testid="search-icon"
+                        class="Svg-sc-ytk21e-0 bHdpig M9l40ptEBXPm03dU3X1k" viewBox="0 0 24 24">
+                        <path
+                            d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z" />
+                    </svg>
+                </div>
+                <div class="recents">
+                    <p id="recents" class="title">Recents</p>
+                    <svg id="toggle_menu" class="icons" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+                        role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 cAMMLk">
+                        <path
+                            d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="playlists">
+                <div class="playlist">
+                    <div class="ranks">1</div>
+                    <div class="pl_profile">
+                        <img src="song img/Kehna-Galat-Galat-x-Halka-Halka-Suroor-Medley-Hindi-2024-20241030203149-500x500.jpg"
+                            alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Kehna Galat Galat X Halka Halka Suroor Hai
+                        </div>
+                        <div class="pl_author">
+                            Madhur Sharma, Nusrat Fateh Ali Khan
+                        </div>
+                        <div class="song_src">
+                            songs\Kehna Galat Galat x Halka Halka Suroor (Lyrical Video) _ @MadhurSharmaMusic  _ @PearlRecords.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">2</div>
+                    <div class="pl_profile">
+                        <img src="song img/Humpty-Sharma-Ki-Dulhania-Hindi-2014-20190618095042-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Samjhawan
+                        </div>
+                        <div class="pl_author">
+                            Javed Ahmad, Shaarib Toshi, Arijit Singh, Shreya Ghoshal
+                        </div>
+                        <div class="song_src">
+                            songs\Samjhawan.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">3</div>
+                    <div class="pl_profile">
+                        <img src="song img/Badrinath-Ki-Dulhania-Full-Hindi-2017-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Humsafar
+                        </div>
+                        <div class="pl_author">
+                            Akhil Sachdeva, Mansheel Gujral
+                        </div>
+                        <div class="song_src">
+                            songs\Humsafar.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">4</div>
+                    <div class="pl_profile">
+                        <img src="song img/bulleya.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Bulleya
+                        </div>
+                        <div class="pl_author">
+                            Vishal Shekhar, Papon, Irshad Kamil
+                        </div>
+                        <div class="song_src">
+                            songs\Pritam, Amit Mishra, Shilpa Rao - Bulleya (Lyric Video).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">5</div>
+                    <div class="pl_profile">
+                        <img src="song img/Channa-Mereya-From-Ae-Dil-Hai-Mushkil-Hindi-2016-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Channa Mereya
+                        </div>
+                        <div class="pl_author">
+                            Pritam, Arijit Singh
+                        </div>
+                        <div class="song_src">
+                            songs\Channa Mereya.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">6</div>
+                    <div class="pl_profile">
+                        <img src="song img/Ae-Dil-Hai-Mushkil-Hindi-2016-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Ae Dil Hai Muskil Title Track
+                        </div>
+                        <div class="pl_author">
+                            Pritam, Arijit Singh
+                        </div>
+                        <div class="song_src">
+                            songs\Ae Dil Hai Mushkil Title Track (From _Ae Dil Hai Mushkil_).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">7</div>
+                    <div class="pl_profile">
+                        <img src="song img/jiyein kyun.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Jiyein Kyun
+                        </div>
+                        <div class="pl_author">
+                            Pritam, Papon
+                        </div>
+                        <div class="song_src">
+                            songs\Jiyein Kyun.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">8</div>
+                    <div class="pl_profile">
+                        <img src="song img/mai_ni_meriye.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Mai Ni Meriye
+                        </div>
+                        <div class="pl_author">
+                            Mohit Chauhan
+                        </div>
+                        <div class="song_src">
+                            songs\Mai Ni Meriye.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">9</div>
+                    <div class="pl_profile">
+                        <img src="song img/Mai-Ni-Meriye-losy-stories.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Mai Ni Meriye
+                        </div>
+                        <div class="pl_author">
+                            Lost Stories, Jonita Gandhi, Ashmin Adwani
+                        </div>
+                        <div class="song_src">
+                            songs\Lost Stories - Mai Ni Meriye (feat. Jonita Gandhi & Ashwin Adwani) [Official
+                            Visualizer].mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">10</div>
+                    <div class="pl_profile">
+                        <img src="song img/Hum-Toh-Deewane-Hindi-2023-20230912170430-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Hum Toh Deewane
+                        </div>
+                        <div class="pl_author">
+                            Rajat Nagpal, Yasser Desai, Rana Sotal
+                        </div>
+                        <div class="song_src">
+                            songs\Hum Toh Deewane - Yasser Desai _ Elvish Yadav (Lyrics).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">11</div>
+                    <div class="pl_profile">
+                        <img src="song img/Mauhalle-Hindi-2024-20240913133134-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Mauhalle
+                        </div>
+                        <div class="pl_author">
+                            Aditya Bhardwaj
+                        </div>
+                        <div class="song_src">
+                            songs\Mauhalle - Aditya Bhardwaj (Official Music Video).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">12</div>
+                    <div class="pl_profile">
+                        <img src="song img/Tu-Hi-Tu-Punjabi-2024-20241007154603-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Tu Hi Tu
+                        </div>
+                        <div class="pl_author">
+                            Mohammad Faiz, Bunny, Sagar
+                        </div>
+                        <div class="song_src">
+                            songs\Tu Hi Tu.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">13</div>
+                    <div class="pl_profile">
+                        <img src="song img/run_through_fire.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Run Through Fire
+                        </div>
+                        <div class="pl_author">
+                            Pink Sweats
+                        </div>
+                        <div class="song_src">
+                            songs\Pink Sweat$ - Run Through Fire [Official Audio].mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">14</div>
+                    <div class="pl_profile">
+                        <img src="song img/Baarishon-Mein-Hindi-2022-20220707173221-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Baarishon Mein
+                        </div>
+                        <div class="pl_author">
+                            Darshan Raval
+                        </div>
+                        <div class="song_src">
+                            songs\Baarishon Mein.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">15</div>
+                    <div class="pl_profile">
+                        <img src="song img/Maula-Hindi-2020-20201224043436-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Maula
+                        </div>
+                        <div class="pl_author">
+                            Papon
+                        </div>
+                        <div class="song_src">
+                            songs\Maula Ya Salli Wa sallim _ Atif Aslam Ai Cover _ Qaseeda Burdah Shareef _ Rabi ul Awal
+                            Special.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">16</div>
+                    <div class="pl_profile">
+                        <img src="song img/Tere-Bina-Na-Guzara-E-Punjabi-2024-20240925154603-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Tere Vina Na Gurzara E
+                        </div>
+                        <div class="pl_author">
+                            Josh Brar
+                        </div>
+                        <div class="song_src">
+                            songs\JOSH BRAR _ Tere Bina Na Guzara E _ Feat. Kinza Hashmi _ Bunty Bains _ Latest Punjabi
+                            Song 2024.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">17</div>
+                    <div class="pl_profile">
+                        <img src="song img/rog_jaane.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Rog Jaane - Mohit Version
+                        </div>
+                        <div class="pl_author">
+                            Palak Muchhal, Mohit Lalwani
+                        </div>
+                        <div class="song_src">
+                            songs\Rog Jaane - Mohit Version Lyrical Laali Ki Shaadi Mein Laaddoo Deewana Vipin Patwa.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">18</div>
+                    <div class="pl_profile">
+                        <img src="song img/Baat-Itni-Si-Hai-Unplugged-Hindi-2023-20230205071541-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Baat Itni Si Hai - Unplugged
+                        </div>
+                        <div class="pl_author">
+                            Twin Strings
+                        </div>
+                        <div class="song_src">
+                            songs\Twin Strings Originals - Baat Itni Si Hai (Unplugged).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">19</div>
+                    <div class="pl_profile">
+                        <img src="song img/Deluxe-English-2023-20230504195804-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Life Goes On
+                        </div>
+                        <div class="pl_author">
+                            Ed Sheeran
+                        </div>
+                        <div class="song_src">
+                            songs\Ed Sheeran - Life Goes On ft. Luke Combs (Live at the 58th ACM Awards).mp3
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="ranks">20</div>
+                    <div class="pl_profile">
+                        <img src="song img/SOUR-English-2021-20210622205946-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Drivers License
+                        </div>
+                        <div class="pl_author">
+                            Olivia Rodrigo
+                        </div>
+                        <div class="song_src">
+                            songs\Olivia Rodrigo - drivers license (Official Video).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">21</div>
+                    <div class="pl_profile">
+                        <img src="song img/Ishq-Ibaadat-Hindi-2024-20241210024548-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Ishq Ibaadat
+                        </div>
+                        <div class="pl_author">
+                            Ali Tariq, Anmol Daniel
+                        </div>
+                        <div class="song_src">
+                            songs\Ishq Ibaadat Official Music Video _ Ali Tariq _ Anmol Daniel _ Shikha Gadkhel _ Novice
+                            Records.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">22</div>
+                    <div class="pl_profile">
+                        <img src="song img/Aisi-Jagah-Le-Ja-Hindi-2024-20241210123529-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Aisi Jagah Le Ja
+                        </div>
+                        <div class="pl_author">
+                            Suyyash Rai
+                        </div>
+                        <div class="song_src">
+                            songs\Aisi Jagah Le Ja sad lofi song A.M.MUSIC slowed+reverb suyyash rai singer.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">23</div>
+                    <div class="pl_profile">
+                        <img src="song img/Kuch-Kehna-Chahta-Huun-Urdu-2021-20241030192030-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Kuch Kehna Chahta Huun
+                        </div>
+                        <div class="pl_author">
+                            Zoha Zuberi
+                        </div>
+                        <div class="song_src">
+                            songs\Kuch Kehna Chahta Huun.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">24</div>
+                    <div class="pl_profile">
+                        <img src="song img/Pahadon-Mein-Hindi-2024-20240105191145-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Pahadon Mein
+                        </div>
+                        <div class="pl_author">
+                            Vishal Mishra
+                        </div>
+                        <div class="song_src">
+                            songs\Pahadon Mein.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">25</div>
+                    <div class="pl_profile">
+                        <img src="song img/Sanu-Nehar-Vale-Punjabi-2023-20230807215916-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Sanu Nehar Vale
+                        </div>
+                        <div class="pl_author">
+                            Harjot K Dhillon, Agaazz
+                        </div>
+                        <div class="song_src">
+                            songs\Sanu Nehar Vale.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">26</div>
+                    <div class="pl_profile">
+                        <img src="song img/Lagaya-Dil-English-2018-20180416150901-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Lagaya Dil
+                        </div>
+                        <div class="pl_author">
+                            Sajjad Ali
+                        </div>
+                        <div class="song_src">
+                            songs\Sajjad Ali - Lagaya Dil (Official Video).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">27</div>
+                    <div class="pl_profile">
+                        <img src="song img/helplessly.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Helplessly
+                        </div>
+                        <div class="pl_author">
+                            Nidhi Wagle
+                        </div>
+                        <div class="song_src">
+                            songs\Crosby, Stills & Nash - Helplessly Hoping - Woodstock - 1969.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">28</div>
+                    <div class="pl_profile">
+                        <img src="song img/Lage-Nahi-Man-Hindi-2022-20220502105110-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Lage Nahi Man
+                        </div>
+                        <div class="pl_author">
+                            Vismay Patel
+                        </div>
+                        <div class="song_src">
+                            songs\Lage Nahi Man.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">29</div>
+                    <div class="pl_profile">
+                        <img src="song img/Raaz-Tera-Mera-Hindi-2022-20220509151951-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Raaz Tere Mere
+                        </div>
+                        <div class="pl_author">
+                            Akanskha Sethi
+                        </div>
+                        <div class="song_src">
+                            songs\Raaz Tera Mera.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">30</div>
+                    <div class="pl_profile">
+                        <img src="song img/Meri-Banogi-Kya-Hindi-2023-20230317030625-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Meri Banogi Kya
+                        </div>
+                        <div class="pl_author">
+                            Rito Riba, Rajat Nagpal
+                        </div>
+                        <div class="song_src">
+                            songs\Meri Banogi Kya.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">31</div>
+                    <div class="pl_profile">
+                        <img src="song img/aise kyun.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Aise Kyun
+                        </div>
+                        <div class="pl_author">
+                            Anurag Saikia, Raghav Chaitanya, Raj Shekhar, Nikhita Gandhi
+                        </div>
+                        <div class="song_src">
+                            songs\AISE KYUN - ANURAG SAIKIA Ft. RAGHAV CHAITANYA _ NIKHITA GANDHI _ RAJ SHEKHAR _
+                            LYRICAL VIDEO _.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">32</div>
+                    <div class="pl_profile">
+                        <img src="song img/Pataakha-Hindi-2018-20180912-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Naina Banjare
+                        </div>
+                        <div class="pl_author">
+                            Arijit Singh
+                        </div>
+                        <div class="song_src">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">33</div>
+                    <div class="pl_profile">
+                        <img src="song img/Ginny-Weds-Sunny-Hindi-2020-20201002143353-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Phir Chala
+                        </div>
+                        <div class="pl_author">
+                            Payal Dev, Jubin Nautiyal
+                        </div>
+                        <div class="song_src">
+                            songs\Phir Chala.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">34</div>
+                    <div class="pl_profile">
+                        <img src="song img/images.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Kitna Hai Pyaar
+                        </div>
+                        <div class="pl_author">
+                            Ashu Shukla
+                        </div>
+                        <div class="song_src">
+                            songs\Kitna hai pyaar _ A song dedicated to one-sided love _ Ashu Shukla.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">35</div>
+                    <div class="pl_profile">
+                        <img src="song img/Mere-Paas-Tum-Raho-Hindi-2023-20230317020833-500x500.jpg" alt=""
+                            class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Mere Pass Tum Raho
+                        </div>
+                        <div class="pl_author">
+                            Sumedh Mudgalkar, Bharat Kamal, Mohit Lalwani, Ambika Devi, Prateeksha Srivastava
+                        </div>
+                        <div class="song_src">
+                            songs\Mere Paas Tum Raho ft. Radhakrishna ❤️__ Radhakrishna vm on Mere Paas Tum Raho__
+                            Sumellikan Ranvi♡.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">36</div>
+                    <div class="pl_profile">
+                        <img src="song img/Chaap-Tilak-Hindi-2022-20220329165341-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Chaap Tilak
+                        </div>
+                        <div class="pl_author">
+                            Danish Sabri, Salman Ali, Shabab Sabri
+                        </div>
+                        <div class="song_src">
+                            songs\Coke Studio Season 7_ Chaap Tilak_ Abida Parveen & Rahat Fateh Ali Khan.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">37</div>
+                    <div class="pl_profile">
+                        <img src="song img/Kudiye-Ni-Hindi-2019-20190531024538-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Kudiye Ni
+                        </div>
+                        <div class="pl_author">
+                            Aparshakti Khurana, Neeti Mohan
+                        </div>
+                        <div class="song_src">
+                            songs\Starfish_Kudiye Ni Tere(Song)_Khushalii K,Milind S,Ehan_Yo Yo Honey
+                            Singh,Khaalif,Harjot K_Bhushan K.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">38</div>
+                    <div class="pl_profile">
+                        <img src="song img/dard chupa na ho.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Dard Chupa Na Ho
+                        </div>
+                        <div class="pl_author">
+                            Meet Bros., Aakansha Sharma, Amarjeet Jaikar
+                        </div>
+                        <div class="song_src">
+                            songs\Dard Chupa Na Ho _ MB Classics _ S1 _ Meet Bros _ Shabbir Ahmed _ Aakanksha_ Amarjeet_
+                            90’s Melodies.mp3
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="ranks">39</div>
+                    <div class="pl_profile">
+                        <img src="song img/mohabbat arooj.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Mohabbat
+                        </div>
+                        <div class="pl_author">
+                            Arooj Aftab
+                        </div>
+                        <div class="song_src">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">40</div>
+                    <div class="pl_profile">
+                        <img src="song img/tasveerein.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Tasveerein
+                        </div>
+                        <div class="pl_author">
+                            Razik Mujawar
+                        </div>
+                        <div class="song_src">
+                            songs\Tasveerein Official Music Video _ Razik Mujawar _ Karasama Beats.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">41</div>
+                    <div class="pl_profile">
+                        <img src="song img/tere_mere_reprise.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Tere Mere Reprise
+                        </div>
+                        <div class="pl_author">
+                            Armaan Malik, Rashmi Virag, Amaal Mallik
+                        </div>
+                        <div class="song_src">
+                            songs\Tere Mere Reprise - Mohit Chauhan.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">42</div>
+                    <div class="pl_profile">
+                        <img src="song img/i-dont-care.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            I Don't Care (With Justin Bieber)
+                        </div>
+                        <div class="pl_author">
+                            Ed Sheeran, Justin Bieber
+                        </div>
+                        <div class="song_src">
+                            songs\Ed Sheeran & Justin Bieber - I Don't Care [Official Music Video].mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">43</div>
+                    <div class="pl_profile">
+                        <img src="song img/Dil-Royi-Jaye-From-De-De-Pyaar-De--Hindi-2019-20190514135023-500x500.jpg"
+                            alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Dil Royi Jaye From "De De Pyaar De"
+                        </div>
+                        <div class="pl_author">
+                            Arijit Singh, Rochak Kohli
+                        </div>
+                        <div class="song_src">
+                            songs\Dil Royi Jaye (From _De De Pyaar De_).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">44</div>
+                    <div class="pl_profile">
+                        <img src="song img/feel-the-same.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Feel The Same
+                        </div>
+                        <div class="pl_author">
+                            The Millennial Club
+                        </div>
+                        <div class="song_src">
+                            songs\feel the same.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">45</div>
+                    <div class="pl_profile">
+                        <img src="song img/baawe.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Baawe
+                        </div>
+                        <div class="pl_author">
+                            Raftaar, Badshah, Hiten
+                        </div>
+                        <div class="song_src">
+                            songs\TRACK 6 _ RAFTAAR X BADSHAH - BAAWE _ HARD DRIVE Vol. 2 _ LYRICS VIDEO _ 18+.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">46</div>
+                    <div class="pl_profile">
+                        <img src="song img/Soulmate-Hindi-2024-20240404153039-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Soulmate
+                        </div>
+                        <div class="pl_author">
+                            Badshah, Arijit Singh
+                        </div>
+                        <div class="song_src">
+                            songs\Soulmate.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">47</div>
+                    <div class="pl_profile">
+                        <img src="song img/Ve-Haaniyaan-Punjabi-2024-20240212220137-500x500.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Ve Haaniyan
+                        </div>
+                        <div class="pl_author">
+                            Danny, Avvy Sra, Sagar
+                        </div>
+                        <div class="song_src">
+                            songs\Ve Haaniyaan Klub Mix _ TikTok Trending _ DJ Ashik X DJ KoNiKz _ Vxd Produxtionz.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">48</div>
+                    <div class="pl_profile">
+                        <img src="song img/chal ghar chalen.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Chal Ghar Chalen
+                        </div>
+                        <div class="pl_author">
+                            Mithoon, Arijit Singh
+                        </div>
+                        <div class="song_src">
+                            songs\Chal Ghar Chalen (From _Malang - Unleash The Madness_) (feat. Arijit Singh).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">49</div>
+                    <div class="pl_profile">
+                        <img src="song img/phir na milen kabhi.jpeg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Phir Na Milen
+                        </div>
+                        <div class="pl_author">
+                            Ankit Tiwari
+                        </div>
+                        <div class="song_src">
+                            songs\Phir Na Milen Kabhi (From _Malang - Unleash The Madness_).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">50</div>
+                    <div class="pl_profile">
+                        <img src="song img/Phir-Na-Aisi-Raat-Aayegi-From-Laal-Singh-Chaddha-Hindi-2022-20220624151001-500x500.jpg"
+                            alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Phir Na Aisi Raat Aayegi
+                        </div>
+                        <div class="pl_author">
+                            Pritam, Arijit Singh, Amitabh Bhattacharya
+                        </div>
+                        <div class="song_src">
+                            songs\Arijit Singh_ Phir Na Aisi Raat Aayegi (Lyrics) _ Laal Singh Chaddha _ Pritam,
+                            Amitabh.mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">51</div>
+                    <div class="pl_profile">
+                        <img src="song img/apna bana le.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Apna Bana Le
+                        </div>
+                        <div class="pl_author">
+                            Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya
+                        </div>
+                        <div class="song_src">
+                            songs\Apna Bana Le (From _Bhediya_).mp3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <div class="ranks">52</div>
+                    <div class="pl_profile">
+                        <img src="song img/khairiyat.jpg" alt="" class="pl_img">
+                    </div>
+                    <div class="pl_titles">
+                        <div class="pl_title">
+                            Khairiyat
+                        </div>
+                        <div class="pl_author">
+                            Pritam, Arijit Singh
+                        </div>
+                        <div class="song_src">
+                            songs\Khairiyat - Arijit Singh (Lyrics) _ Lyrical Bam Hindi.mp3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_head">
+                <div id="right_nav" class="right">
+                    <button id="all" class="common_btn sticky_btn active_right_nav">All</button>
+                    <button id="music" class="common_btn sticky_btn">Music</button>
+                    <button id="podcasts" class="common_btn sticky_btn">Podcasts</button>
+                </div>
+                <div id="albums" class="right">
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/liked-songs-300.jpg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Liked songs
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 1.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Best of all time
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 2.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            windardium
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 3.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Baby
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 4.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Stay
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 5.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Cold
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 6.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            Fake
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="al_img">
+                            <img src="assets/img/asset 0.jpeg" alt="">
+                        </div>
+                        <div class="al_title">
+                            New
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightmain">
+                <div id="charts">
+                    <div class="chart">
+                        <div class="chart_nav">
+                            <span class="music_topic">Made For User</span>
+                            <span class="show_all">Show all</span>
+                        </div>
+
+
+                        <div class="arrow left_arrow ">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z" />
+                            </svg>
+                        </div>
+
+                        <div class="mixes">
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 29.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Your weekly mixtape of fresh music. Enjoy new music and deep
+                                    cuts picked for you. Updates every Monday.
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 33.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Pritam, KK, Meet Bros. and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 34.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Justin Bieber, Alec Benjamin, Lauv and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 35.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    The Kid LAROI, BoyWithUke, charlieonnafriday and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 36.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    YOASOBI, Lisa, Rizky Ayuba and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 37.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Ed Sheeran, Wiz Khalifa, Andy Grammer and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 38.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Aditya Rikhari, Aditya Bhardwaj, Anuv Jain and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 39.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Catch all the latest music from artists you follow, plus new
+                                    singles picked for you. Updates every Friday.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="arrow right_arrow">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="chart">
+                        <div class="chart_nav">
+                            <span class="music_topic">Jump back in</span>
+                            <span class="show_All">Show all</span>
+                        </div>
+
+                        <div class="arrow left_arrow ">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z" />
+                            </svg>
+                        </div>
+
+                        <div class="mixes">
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 1.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Your weekly mixtape of fresh music. Enjoy new music and deep
+                                    cuts picked for you. Updates every Monday.
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 4.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Pritam, KK, Meet Bros. and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 5.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Justin Bieber, Alec Benjamin, Lauv and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 8.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    The Kid LAROI, BoyWithUke, charlieonnafriday and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 21.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    YOASOBI, Lisa, Rizky Ayuba and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 23.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Ed Sheeran, Wiz Khalifa, Andy Grammer and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 24.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Aditya Rikhari, Aditya Bhardwaj, Anuv Jain and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="assets/img/asset 27.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Catch all the latest music from artists you follow, plus new
+                                    singles picked for you. Updates every Friday.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow right_arrow">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart_nav">
+                            <span class="music_topic">More like Best of All Time</span>
+                            <span class="show_All">Show all</span>
+                        </div>
+                        <div class="arrow left_arrow">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z" />
+                            </svg>
+                        </div>
+
+                        <div class="mixes">
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 12.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Your weekly mixtape of fresh music. Enjoy new music and deep
+                                    cuts picked for you. Updates every Monday.
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 13.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Pritam, KK, Meet Bros. and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 14.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Justin Bieber, Alec Benjamin, Lauv and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 15.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    The Kid LAROI, BoyWithUke, charlieonnafriday and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 16.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    YOASOBI, Lisa, Rizky Ayuba and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 17.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Ed Sheeran, Wiz Khalifa, Andy Grammer and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 18.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Aditya Rikhari, Aditya Bhardwaj, Anuv Jain and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="more like/asset 20.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Catch all the latest music from artists you follow, plus new
+                                    singles picked for you. Updates every Friday.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow right_arrow">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart_nav">
+                            <span class="music_topic">Popular Radio</span>
+                            <span class="show_All">Show all</span>
+                        </div>
+                        <div class="arrow left_arrow ">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z" />
+                            </svg>
+                        </div>
+                        <div class="mixes">
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 31.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Your weekly mixtape of fresh music. Enjoy new music and deep
+                                    cuts picked for you. Updates every Monday.
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 32.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Pritam, KK, Meet Bros. and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 33.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Justin Bieber, Alec Benjamin, Lauv and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 34.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    The Kid LAROI, BoyWithUke, charlieonnafriday and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 35.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    YOASOBI, Lisa, Rizky Ayuba and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 36.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Ed Sheeran, Wiz Khalifa, Andy Grammer and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 37.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Aditya Rikhari, Aditya Bhardwaj, Anuv Jain and more
+                                </div>
+                            </div>
+
+                            <div class="mix">
+                                <div class="mix_avatar">
+                                    <img src="radio/asset 38.jpeg" alt="">
+                                </div>
+                                <div class="mix_title">
+                                    Catch all the latest music from artists you follow, plus new
+                                    singles picked for you. Updates every Friday.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow right_arrow">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div id="community">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="table_header">Company</th>
+                                <th class="table_header">Communities</th>
+                                <th class="table_header">Useful Links</th>
+                                <th class="table_header">Spotify Plans</th>
+                            </tr>
+                            <tr>
+                                <td>About</td>
+                                <td>For Artists</td>
+                                <td>Support</td>
+                                <td>Premium Individual</td>
+                            </tr>
+                            <tr>
+                                <td>Jobs</td>
+                                <td>Developers</td>
+                                <td>Free Mobile App</td>
+                                <td>Premium Duo</td>
+                            </tr>
+                            <tr>
+                                <td>For the Record</td>
+                                <td>Advestising</td>
+                                <td></td>
+                                <td>Premium Family</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Investors</td>
+                                <td></td>
+                                <td>Premium Student</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Vendors</td>
+                                <td></td>
+                                <td>Premium Free</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span id="social_media">
+                        <span class="social">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                                viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dCAvla">
+                                <path
+                                    d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z" />
+                                <path
+                                    d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z" />
+                            </svg>
+                        </span>
+                        <span class="social">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                                viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dCAvla">
+                                <path
+                                    d="M13.54 3.889a2.968 2.968 0 0 0 1.333-1.683 5.937 5.937 0 0 1-1.929.738 2.992 2.992 0 0 0-.996-.706 2.98 2.98 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.929 2.929 0 0 0-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 0 1-3.484-.932A8.536 8.536 0 0 1 1.532 2.54a2.993 2.993 0 0 0-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 0 1-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.937 2.937 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.945 2.945 0 0 0 1.77.603 5.944 5.944 0 0 1-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 0 0 5.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 0 0 1.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 0 0 .738-1.988 8.417 8.417 0 0 0 .246-2.429 6.177 6.177 0 0 0 1.508-1.563c-.56.249-1.14.407-1.738.476z" />
+                            </svg>
+                        </span>
+                        <span class="social">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                                viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                                <path
+                                    d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0 0 16 8z" />
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div id="right_footer">
+                <div id="legal">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety & Privacy</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+                <div id="copy_right">
+                    ©2025 Spotify AB
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src=""></audio>
+
+    <div id="music_player">
+
+        <div id="music_details">
+            <div class="music_avatar">
+                <img id="music_avatar" src="assets/img/asset 35.jpeg" alt="">
+            </div>
+            <div id="song_details">
+                <div id="song_title">
+                    Baby
+                </div>
+                <div id="song_author">
+                    Justin Bieber
+                </div>
+            </div>
+        </div>
+
+        <div id="player">
+
+            <div id="music_controls">
+
+                <div class="controls" id="previous">
+                    <img class="control" src="assets/svg/previous.svg" alt="">
+                </div>
+
+                <div class="controls" id="pause_play">
+                    <img class="control" id="on_off" src="assets/svg/PLAYS.svg" alt="">
+                </div>
+
+                <div class="controls" id="next">
+                    <img class="control" src="assets/svg/next.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <div id="music_ts">
+                    0:00
+                </div>
+
+                <div id="progress">
+                    <div id="prog_dot">
+                    </div>
+                    <div id="progressed">
+                    </div>
+                </div>
+                <div id="music_time">
+                </div>
+            </div>
+        </div>
+
+        <div id="icons">
+
+            <span class="controller"></span>
+
+            <span class="controller">
+                <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                    viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                    <path d="M11.196 8 6 5v6l5.196-3z" />
+                    <path
+                        d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z" />
+                </svg>
+            </span>
+
+            <span class="controller">
+                <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                    viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                    <path
+                        d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z" />
+                </svg>
+            </span>
+
+            <span class="controller">
+                <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                    viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                    <path
+                        d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z" />
+                    <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                </svg>
+            </span>
+
+            <span id="volume_icon">
+                <img id="vol_mute" src="assets/svg/vol.svg" alt="">
+            </span>
+
+            <span class="controller volume">
+                <div id="volume">
+                    <div id="slider">
+                    </div>
+                    <div id="vol_prog">
+                    </div>
+                </div>
+            </span>
+
+            <span class="controller">
+                <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                    viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                    <path
+                        d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z" />
+                </svg>
+            </span>
+
+        </div>
+    </div>
+</body>
+<script src="spotify.js"></script>
+
+</html>
