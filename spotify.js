@@ -126,6 +126,22 @@ audio.addEventListener("volumechange", () => {
     }
 });
 
+vol_mute.addEventListener("click", () => {
+
+    if (vol_mute.src.includes("mute.svg")) {
+        vol_mute.src = "assets/svg/vol.svg";
+        audio.volume = lastVolume;
+        vol_prog.style.width =`${vol_level*100}%`;
+        slider.style.left = `${vol_level*100-5}%`;  
+    } else {
+        vol_mute.src = "assets/svg/mute.svg";
+        lastVolume = audio.volume;
+        vol_prog.style.width = `0%`;
+        slider.style.left = `0%`;
+        audio.volume = 0;
+    }
+});
+
 // -------------------------dragging------------------------------ //
 
 let isDragging = false;
@@ -219,19 +235,31 @@ const song_name = document.querySelector("#song_title");
 const singer = document.querySelector("#song_author");
 const song_img = document.querySelector("#music_avatar");
 
-playlist.forEach((song) => {
-    song.addEventListener("click", () => {
-        const pl_profile = song.querySelector(".pl_profile img").src;
-        const pl_title = song.querySelector(".pl_title").innerHTML;
-        const pl_author = song.querySelector(".pl_author").innerHTML;
-        const pl_audio_src = song.querySelector(".song_src");
-
-        song_name.innerHTML = pl_title;
-        singer.innerHTML = pl_author;
-        song_img.src = pl_profile;
-        audio.src = pl_audio_src.innerHTML.trim();
-        audio.play();
-        on_off.src = "assets/svg/pause.svg";
+playlist.forEach(function(song) {
+    song.addEventListener("click", function() {
+        song_cred(song);
     });
 });
 
+function song_cred(song) {
+    const pl_profile = song.querySelector(".pl_profile img").src;
+    const pl_title = song.querySelector(".pl_title").innerHTML;
+    const pl_author = song.querySelector(".pl_author").innerHTML;
+    const pl_audio_src = song.querySelector(".song_src").innerHTML.trim();
+
+    song_name.innerHTML = pl_title;
+    singer.innerHTML = pl_author;
+    song_img.src = pl_profile;
+    audio.src = pl_audio_src;
+    audio.play();
+    on_off.src = "assets/svg/pause.svg";
+}
+
+
+
+/*---------------------------- auto play --------------------------------*/
+
+const song_cred = [];
+playlist.forEach((song)=>{
+    
+})
