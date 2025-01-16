@@ -258,8 +258,3 @@ function song_cred(song) {
 
 
 /*---------------------------- auto play --------------------------------*/
-
-const song_cred = [];
-playlist.forEach((song)=>{
-    
-})
